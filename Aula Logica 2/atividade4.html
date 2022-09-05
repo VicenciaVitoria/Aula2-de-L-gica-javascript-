@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Poligonos</h1>
+    <script>
+        let lados = parseInt (prompt("Quantos lados tem seu poligono?"))
+        let tam = parseFloat (prompt("E qual a medida de um lado?"))
+
+        if (lados < 3) {
+            document.write ("Não é um poligono!")
+        } else if (lados == 3) {
+            document.write ("O poligono escolhido é um Triangulo, e seu perimetro é " + tam * lados)
+        } else if (lados == 4)  {
+            document.write ("O poligono escolhido é um Quadrado, e sua área é " + tam * tam)
+        } else if (lados == 5)  {
+            document.write ("O poligono escolhido é um Pentagono")
+        } else {document.write("Poligono não identificado")
+        }
+    </script>
+    
+</body>
+</html>

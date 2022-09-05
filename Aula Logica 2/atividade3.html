@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fazendo operações</h1>
+    <script>
+        let num1 = parseInt (prompt("Escolha seu primeiro numero:"))
+        let num2 = parseInt (prompt("Agora, escolha o segundo numero:"))
+        let operacao = parseInt (prompt("Insira o valor correspondente a operação d sua escolha: 1 (Adição), 2 (Subtração), 3 (Divisão), ou 4 (Multiplicação)"))
+        
+        if (operacao == 1) {
+            resultado = num1 + num2
+        } else if (operacao == 2) {
+            resultado = num1 - num2
+        } else if (operacao == 3) {
+            resultado = num1/num2
+        } else {resultado = num1 * num2}
+
+        document.write ("E o resultado de sua operação é " + resultado)
+    
+    </script>
+    
+</body>
+</html>
